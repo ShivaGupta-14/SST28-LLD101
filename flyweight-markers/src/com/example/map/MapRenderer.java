@@ -2,9 +2,6 @@ package com.example.map;
 
 import java.util.List;
 
-/**
- * Renders markers to console (simulating a UI renderer).
- */
 public class MapRenderer {
 
     public void render(List<MapMarker> markers) {
@@ -12,7 +9,6 @@ public class MapRenderer {
         int shown = 0;
 
         for (MapMarker m : markers) {
-            // Simulate some "rendering" work
             if (shown < 8) {
                 System.out.println(format(m));
                 shown++;
